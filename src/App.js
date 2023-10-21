@@ -3,19 +3,20 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import MyCartPage from './components/MyCartPage';
+import "../src/App.css"
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header>
-          <nav>
+          <nav className='navbar'>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="nav-link">Home</Link>
               </li>
               <li>
-                <Link to="/cart">My Cart</Link>
+                <Link to="/cart" className="nav-link">My Cart</Link>
               </li>
             </ul>
           </nav>

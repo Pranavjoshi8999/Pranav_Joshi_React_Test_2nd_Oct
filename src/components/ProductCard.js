@@ -45,13 +45,13 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="product-card">
+    <div className="product-card product-list product-card">
       {/* Product details here */}
       {/* {console.log(product)} */}
-      <img src={product.thumbnail} alt={product.title} />
-       <h3>{product.title}</h3>
-       <p>${product.price}</p>
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <img className="product-image" src={product.thumbnail} alt={product.title} />
+       <h3 className="product-title" >{product.title}</h3>
+       <p className="product-price">${product.price}</p>
+      <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
     </div>
   );
 };
